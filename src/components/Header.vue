@@ -37,7 +37,7 @@ export default {
     login() {
       this.walletConnection.requestSignIn({
             contractId: this.nearConfig.contractName,
-            methodNames: [this.contract.ft_transfer.name]
+            methodNames: [this.contract.nft_mint.name]
           },
           'Near vue proto', null, null
       )
